@@ -2,18 +2,18 @@
     <div class="footer">
         <div class="footerPartOne">
             <ul class="footerLinks">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Produtos</li></a>
-                <a href="#"><li>Sobre nós</li></a>
-                <a href="#"><li>Contate-nos</li></a>
+                <li><a href="./index.php">Home</a></li>
+                <li><a href="./produtos.php">Produtos</a></li>
+                <li><a href="sobreNos.php">Sobre nós</a></li>
+                <li><a href="contateNos.php">Contate-nos</a></li>
             </ul>
             <h1>WayneEnterprise</h1>
         </div>
 
         <div class="footerPartTwo">
 
-            <img src="./assets/iconWhatsapp.svg">
-            <img src="./assets/iconInstagram.svg">
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </div>
 </footer>

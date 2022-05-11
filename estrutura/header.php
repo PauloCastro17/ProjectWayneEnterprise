@@ -3,10 +3,10 @@
             <h1>WayneEnterprise</h1>
 
             <ul class="headerLinks">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Produtos</li></a>
-                <a href="#"><li>Sobre nós</li></a>
-                <a href="#"><li>Contate-nos</li></a>
+                <li><a href="./index.php">Home</a></li>
+                <li><a href="./produtos.php">Produtos</a></li>
+                <li><a href="sobreNos.php">Sobre nós</a></li>
+                <li><a href="contateNos.php">Contate-nos</a></li>
             </ul>
         </div>
     </header>
