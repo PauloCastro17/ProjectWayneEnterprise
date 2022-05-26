@@ -1,3 +1,6 @@
+    <?php
+        include_once("./classes/connection.php")
+    ?>
     <header>
         <div class="header">
             <h1>WayneEnterprise</h1>

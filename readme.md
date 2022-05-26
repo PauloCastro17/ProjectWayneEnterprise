@@ -28,3 +28,9 @@ https://www.figma.com/file/evQoNXmtxG9HB5oR6x6ErF/Project---Wayne-Enterprise
 <p>
     <img src="./imagesReadme/image4.png">
 </p>
+
+### Page Register
+
+<p>
+    <img src="./imagesReadme/image5.png">
+</p>
