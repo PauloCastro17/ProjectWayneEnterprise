@@ -16,4 +16,5 @@
     <link rel="stylesheet" href="./css/sobreNos.css">
     <link rel="stylesheet" href="./css/contateNos.css">
     <link rel="stylesheet" href="./css/registerPage.css">
+    <link rel="stylesheet" href="./css/loginPage.css">
 </head>

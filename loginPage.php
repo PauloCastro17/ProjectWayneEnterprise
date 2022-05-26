@@ -15,14 +15,14 @@
                 <form method="post">
                     <div class="formLoginPage">
                         <div class="inputLoginPage">
-                            <input type="text" name="nomeSobrenome" placeholder="Insira seu nome e sobrenome"/>
+                            <input type="text" name="nomeSobrenome" placeholder="Email"/>
                         </div>
 
                         <div class="inputLoginPage">
-                            <input type="text" name="email" placeholder="Insira um email"/>
+                            <input type="text" name="email" placeholder="Senha"/>
                         </div>
                     
-                        <span>Já possui conta? <a href="./loginPage.php">Clique aqui</a></span>
+                        <span>Já possui conta? <a href="./registerPage.php">Clique aqui</a></span>
 
                         <div class="submitLoginPage">
                             <input type="submit" value="Cadastrar"/>
