@@ -40,3 +40,17 @@ https://www.figma.com/file/evQoNXmtxG9HB5oR6x6ErF/Project---Wayne-Enterprise
 <p>
     <img src="./imagesReadme/image6.png">
 </p>
+
+### Page List Products
+
+<p>
+    <img src="./imagesReadme/image7.png">
+</p>
+
+<p>
+    <img src="./imagesReadme/image8.png">
+</p>
+
+<p>
+    <img src="./imagesReadme/image9.png">
+</p>

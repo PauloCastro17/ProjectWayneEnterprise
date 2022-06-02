@@ -31,6 +31,7 @@
     border: none;
     border-radius: 4px;
     margin-bottom: 20px;
+    color: #FFF;
 }
 
 .inputLoginPage input::placeholder{
