@@ -14,7 +14,7 @@
         <div class="rowHome">
             <div class="produtosHome">
                 <div class="produtoHome">
-                    <img src="./assets/imageCamisa.png">
+                    <img src="./assets/images/imageCamisa.png">
                     <div class="legendaProdutoHome">
                         <h2>Camisa 1</h2>
                         <p>R$ 60.00</p>
@@ -22,23 +22,6 @@
                     </div>
                 </div>
 
-                <div class="produtoHome">
-                    <img src="./assets/imageCamisa.png">
-                    <div class="legendaProdutoHome">
-                        <h2>Camisa 1</h2>
-                        <p>R$ 60.00</p>
-                        <a><button>Adicionar</button></a>
-                    </div>
-                </div>
-
-                <div class="produtoHome">
-                    <img src="./assets/imageCamisa.png">
-                    <div class="legendaProdutoHome">
-                        <h2>Camisa 1</h2>
-                        <p>R$ 60.00</p>
-                        <a><button>Adicionar</button></a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

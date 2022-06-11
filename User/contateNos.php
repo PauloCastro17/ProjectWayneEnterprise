@@ -13,7 +13,7 @@
         <div class="containerContactUs">
             <h1>Contate-nos</h1>
             <div class="rowContactUs">
-                <img src="./assets/imageContactUs.svg">
+                <img src="./assets/images/imageContactUs.svg">
                 <div class="infosContactUs">
                     <div class="info1">
                         <p>Tel: xx xxxxx-xxxx</p>

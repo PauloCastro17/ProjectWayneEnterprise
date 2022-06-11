@@ -14,7 +14,7 @@
         <div class="rowProducts">
             <div class="produtosProducts">
                 <div class="produtoProducts">
-                    <img src="./assets/imageCamisa.png">
+                    <img src="./assets/images/imageCamisa.png">
                     <div class="legendaProdutoProducts">
                         <h2>Camisa 1</h2>
                         <p>R$ 60.00</p>
@@ -22,77 +22,6 @@
                     </div>
                 </div>
 
-                <div class="produtoProducts">
-                    <img src="./assets/imageCamisa.png">
-                    <div class="legendaProdutoProducts">
-                        <h2>Camisa 1</h2>
-                        <p>R$ 60.00</p>
-                        <a><button>Adicionar</button></a>
-                    </div>
-                </div>
-
-                <div class="produtoProducts">
-                    <img src="./assets/imageCamisa.png">
-                    <div class="legendaProdutoProducts">
-                        <h2>Camisa 1</h2>
-                        <p>R$ 60.00</p>
-                        <a><button>Adicionar</button></a>
-                    </div>
-                </div>
-
-                <div class="produtoProducts">
-                    <img src="./assets/imageCamisa.png">
-                    <div class="legendaProdutoProducts">
-                        <h2>Camisa 1</h2>
-                        <p>R$ 60.00</p>
-                        <a><button>Adicionar</button></a>
-                    </div>
-                </div>
-
-                <div class="produtoProducts">
-                    <img src="./assets/imageCamisa.png">
-                    <div class="legendaProdutoProducts">
-                        <h2>Camisa 1</h2>
-                        <p>R$ 60.00</p>
-                        <a><button>Adicionar</button></a>
-                    </div>
-                </div>
-
-                <div class="produtoProducts">
-                    <img src="./assets/imageCamisa.png">
-                    <div class="legendaProdutoProducts">
-                        <h2>Camisa 1</h2>
-                        <p>R$ 60.00</p>
-                        <a><button>Adicionar</button></a>
-                    </div>
-                </div>
-
-                <div class="produtoProducts">
-                    <img src="./assets/imageCamisa.png">
-                    <div class="legendaProdutoProducts">
-                        <h2>Camisa 1</h2>
-                        <p>R$ 60.00</p>
-                        <a><button>Adicionar</button></a>
-                    </div>
-                </div>
-
-                <div class="produtoProducts">
-                    <img src="./assets/imageCamisa.png">
-                    <div class="legendaProdutoProducts">
-                        <h2>Camisa 1</h2>
-                        <p>R$ 60.00</p>
-                        <a><button>Adicionar</button></a>
-                    </div>
-                </div>
-
-                <div class="produtoProducts">
-                    <img src="./assets/imageCamisa.png">
-                    <div class="legendaProdutoProducts">
-                        <h2>Camisa 1</h2>
-                        <p>R$ 60.00</p>
-                        <a><button>Adicionar</button></a>
-                    </div>
-                </div>
 
             </div>
         </div>
