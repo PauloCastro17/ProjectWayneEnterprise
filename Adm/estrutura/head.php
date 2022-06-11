@@ -20,4 +20,5 @@
     <link rel="stylesheet" href="./css/registerPage.css">
     <link rel="stylesheet" href="./css/loginPage.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/adcProducts.css">
 </head>

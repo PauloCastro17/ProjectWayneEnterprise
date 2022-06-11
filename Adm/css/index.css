@@ -7,3 +7,6 @@ html, body{
     background-color: #EAEEF6;
 }
 
+a{
+    text-decoration: none;
+}
