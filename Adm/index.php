@@ -33,7 +33,7 @@
     </section>
     <?php
         if($_POST){
-            $stmt = $conn->prepare("SELECT * FROM clientes WHERE email_cliente = :email AND senha_cliente = :senha AND adm = :adm");
+            $stmt = $conn->prepare("SELECT * FROM usuarios WHERE email_user = :email AND senha_user = :senha AND adm = :adm");
             $stmt->execute(array(
                 ':email' => $_POST['email'],
                 ':senha' => $_POST['senha'],
@@ -46,9 +46,9 @@
             foreach($resultado as $item){
                 $logado = true;
                 $_SESSION['online'] = 1;
-                $_SESSION['id'] = $item['id_cliente'];
-                $_SESSION['nome'] = $item['nome_cliente'];
-                $_SESSION['email'] = $item['email_cliente'];
+                $_SESSION['id'] = $item['id_user'];
+                $_SESSION['nome'] = $item['nome_user'];
+                $_SESSION['email'] = $item['email_user'];
                 $_SESSION['adm'] = $item['adm'];
             }
             if($logado){

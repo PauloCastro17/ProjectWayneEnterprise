@@ -1,6 +1,6 @@
 <?php
-    include_once("./classes/connection.php")
-
+    include_once("./classes/connection.php");
+    
 ?>
 
 <head>

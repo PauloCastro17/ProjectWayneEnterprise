@@ -81,22 +81,3 @@
     cursor: pointer;
 }
 
-.messageRegisterPage{
-    width: 96%;
-    padding: 15px;
-    margin-bottom: 25px;
-    background-color: #D1E7DD;
-    display: flex;
-    justify-content: center;
-    animation: slideY 1s;
-}
-
-@keyframes slideY {
-    from{
-        transform: translateY(-90px)
-    }
-    to{
-        transform: translateY(0px)
-
-    }
-}

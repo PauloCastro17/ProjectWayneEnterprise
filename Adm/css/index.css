@@ -10,3 +10,35 @@ html, body{
 a{
     text-decoration: none;
 }
+
+.messageRegisterPage{
+    width: 96%;
+    padding: 8px;
+    margin-bottom: 25px;
+    background-color: #D1E7DD;
+    display: flex;
+    justify-content: center;
+    animation: slideY 1s;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.messageRegisterPage2{
+    width: 96%;
+    padding: 8px;
+    margin-bottom: 25px;
+    background-color: #dc3546c2;
+    display: flex;
+    justify-content: center;
+    animation: slideY 1s;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+@keyframes slideY {
+    from{
+        transform: translateY(-90px)
+    }
+    to{
+        transform: translateY(0px)
+
+    }
+}

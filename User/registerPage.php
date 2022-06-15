@@ -50,7 +50,7 @@
                 $email = $_POST['email'];
                 $nomeSobrenome = $_POST['nomeSobrenome'];
                     if($senha1 == $senha2 && $nomeSobrenome != "" && $email != ""){
-                        $stmt = $conn->prepare('INSERT INTO clientes(id_cliente, nome_cliente, email_cliente, senha_cliente, adm) VALUES(NULL, :nome, :email, :senha, 0)');
+                        $stmt = $conn->prepare('INSERT INTO clientes(id_user, nome_user, email_user, senha_user, adm) VALUES(NULL, :nome, :email, :senha, 0)');
                         $stmt->execute(array(
                             ':nome' => $nomeSobrenome,
                             ':email' => $email,

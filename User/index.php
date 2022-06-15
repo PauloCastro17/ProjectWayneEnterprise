@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-    include_once("./estrutura/head.php")
+    include_once("./estrutura/head.php");
+    include_once("./classes/connection.php")
 ?>
 <body>
 <?php
@@ -13,15 +14,21 @@
         <h1>Últimos itens adicionados</h1>
         <div class="rowHome">
             <div class="produtosHome">
-                <div class="produtoHome">
-                    <img src="./assets/images/imageCamisa.png">
-                    <div class="legendaProdutoHome">
-                        <h2>Camisa 1</h2>
-                        <p>R$ 60.00</p>
-                        <a><button>Adicionar</button></a>
-                    </div>
-                </div>
-
+                <?php
+                    $stmt = $conn->prepare("SELECT * FROM produtos LIMIT 3");
+                    $stmt->execute();
+                    $resultado = $stmt->fetchAll();
+                    foreach ($resultado as $row){
+                        echo '<div class="produtoHome">
+                        <img src='.$row['imagem_produto'].'>
+                        <div class="legendaProdutoHome">
+                            <h2>'.$row['nome_produto'].'</h2>
+                            <p>R$ '.$row['preco_produto'].'</p>
+                            <a><button>Adicionar</button></a>
+                        </div>
+                    </div>';
+                    }
+                ?>
             </div>
         </div>
     </div>

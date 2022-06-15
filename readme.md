@@ -91,8 +91,18 @@ https://www.figma.com/file/evQoNXmtxG9HB5oR6x6ErF/Project---Wayne-Enterprise
     <img src="./imagesReadme/image14.png">
 </p>
 
-### Page Adiciona Produto
+### Page Add Product
 
 <p>
     <img src="./imagesReadme/image15.png">
+</p>
+
+### Page Edit Product
+
+<p>
+    <img src="./imagesReadme/image16.png">
+</p>
+
+<p>
+    <img src="./imagesReadme/image17.png">
 </p>
