@@ -8,7 +8,7 @@ O projetos está sendo desenvolvido em PHP como meio de estudo, quando eu for fa
  * PHP
  * HTML
  * CSS
- * MariaDB (banco de dados)
+ * MySQL (banco de dados)
 
 ### Link template FIGMA
 
