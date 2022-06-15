@@ -9,6 +9,7 @@ O projetos está sendo desenvolvido em PHP como meio de estudo, quando eu for fa
  * HTML
  * CSS
  * MySQL (banco de dados)
+ * Utilizo o xampp para rodar o projeto
 
 ### Link template FIGMA
 
