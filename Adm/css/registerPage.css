@@ -5,6 +5,20 @@
     margin-bottom: 150px;
 }
 
+.containerRegisterPage h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 35px;
+    font-family: 'Maven Pro', sans-serif;
+    color: #3E9FF7;
+}
+
+
 .rowRegisterPage{
     width: 100%;
     display: flex;

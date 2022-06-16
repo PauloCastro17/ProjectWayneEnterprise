@@ -79,7 +79,7 @@
                                     ':preco'	=>$_POST['precoProduto'],
                                     ':imagem'	=>$imagem_destino,
                                     ':quant'	=>$_POST['quantProduto'],
-                                    ':dataPubli' =>date("Y-m-d H:i:s")
+                                    ':dataPubli' =>date("Y-m-d")
                                 ));
                                 $_SESSION['msg'] = '<div class="messageRegisterPage"> <h2>Dados Enviados com sucesso!</h2> </div>';
                                 header("Location: addProduct.php");
