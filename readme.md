@@ -107,3 +107,9 @@ https://www.figma.com/file/evQoNXmtxG9HB5oR6x6ErF/Project---Wayne-Enterprise
 <p>
     <img src="./imagesReadme/image17.png">
 </p>
+
+### Page Edit Admin Data 
+
+<p>
+    <img src="./imagesReadme/image18.png">
+</p>

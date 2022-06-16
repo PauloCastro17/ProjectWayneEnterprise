@@ -61,7 +61,7 @@
                         </div>
 
                         <div class="submitEnvPage">
-                            <input type="submit" value="Enviar"/>
+                            <input type="submit" value="Editar"/>
                         </div>
                     </div>
                 </form>

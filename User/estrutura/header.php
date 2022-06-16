@@ -1,5 +1,5 @@
     <?php
-        include_once("./classes/connection.php")
+        include_once("./classes/connection.php");
     ?>
     <header>
         <div class="header">
@@ -13,4 +13,6 @@
             </ul>
         </div>
     </header>
+
+
 

@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-    include_once("./estrutura/head.php")
+    include_once("./estrutura/head.php");
+    if(!isset($_SESSION['id'])){
+        header('Location: loginPage.php');
+    }
 ?>
 <body>
 <?php
@@ -13,7 +16,7 @@
         <h1>Carrinho de Compras</h1>
         <div class="rowShoppingCart">
             <div class="productShoppingCart">
-                <img src="./assets/imageCamisa.png">
+                <img src="./assets/images/imageCamisa.png">
                 <div class="legendaShoppinCart">
                     <h2>Camisa 1</h2>
                         <div class="legenda2ShoppingCart">
