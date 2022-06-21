@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <?php
-        include_once("estrutura/head.php")
+        include_once("estrutura/head.php");
+        session_start();
     ?>
 </head>
 <body>
@@ -16,12 +17,12 @@
                 <img src="./assets/images/imageContactUs.svg">
                 <div class="infosContactUs">
                     <div class="info1">
-                        <p>Tel: xx xxxxx-xxxx</p>
-                        <p>Email: mail@gmail.com</p>
+                        <p>Tel: <?php echo $telEmpresa; ?></p>
+                        <p><?php echo $emailEmpresa; ?></p>
                     </div>
                     <div class="info2">
-                        <p>20 Margaret st, London</p>
-                        <p>Great britain, 3NM98-LK</p>
+                        <p><?php echo $endereco1; ?></p>
+                        <p><?php echo $endereco2; ?></p>
                     </div>
                 </div>
             </div>

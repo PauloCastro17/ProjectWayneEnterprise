@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <?php
-        include_once("estrutura/head.php")
+        include_once("estrutura/head.php");
+        session_start();
     ?>
 </head>
 <body>
@@ -18,7 +19,7 @@
                     <div class="h1legendaAboutUs">
                         <h2>Sobre a <h1>WayneEnterprise</h1></h2>
                     </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p><?php echo $sobreEmpresa; ?></p>
                 </div>
             </div>
         </div>

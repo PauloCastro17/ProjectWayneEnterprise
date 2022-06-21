@@ -72,7 +72,7 @@
                             // tenta mover o arquivo para o destino
                             if(( @move_uploaded_file( $imagem_tmp, $imagem_destino  )))
                             {
-                                $stmt = $conn->prepare("INSERT INTO produtos(id_produto, nome_produto, preco_produto, imagem_produto, quant_produto, data_publi) 
+                                $stmt = $conn->prepare("INSERT INTO produtos(id_produto, nome_produto, preco_produto, imagem_produto, estoque, data_publi) 
                                                         VALUES(NULL, :nome, :preco, :imagem, :quant, :dataPubli)");
                                 $stmt->execute(array(
                                     ':nome'	=>$_POST['nomeProduto'],

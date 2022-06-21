@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-    include_once("./estrutura/head.php")
+        include_once("estrutura/head.php");
+        session_start();
 ?>
 <body>
 <?php

@@ -34,7 +34,7 @@
                             $nomeProduto = $row['nome_produto'];
                             $precoProduto = $row['preco_produto'];
                             $imagemProduto = $row['imagem_produto'];
-                            $quantProduto = $row['quant_produto'];
+                            $quantProduto = $row['estoque'];
                             $dataPubli = $row['data_publi'];
                         }
 
@@ -89,7 +89,7 @@
                         // tenta mover o arquivo para o destino
                         if(( @move_uploaded_file( $imagem_tmp, $imagem_destino  )))
                         {
-                            $stmt = $conn->prepare("UPDATE produtos SET nome_produto = :nome, preco_produto = :preco, imagem_produto = :imagem, quant_produto = :quant, data_publi = :dataPubli WHERE id_produto = :id");
+                            $stmt = $conn->prepare("UPDATE produtos SET nome_produto = :nome, preco_produto = :preco, imagem_produto = :imagem, estoque = :quant, data_publi = :dataPubli WHERE id_produto = :id");
                             $stmt->execute(array(
                                 ':nome'	=>$_POST['nomeProduto'],
                                 ':preco'	=>$_POST['precoProduto'],
@@ -106,7 +106,7 @@
                             header('Location: editPage.php?id='.$_GET['id']);
                         }
                     }else{
-                        $stmt = $conn->prepare("UPDATE produtos SET nome_produto = :nome, preco_produto = :preco, quant_produto = :quant, data_publi = :dataPubli WHERE id_produto = :id");
+                        $stmt = $conn->prepare("UPDATE produtos SET nome_produto = :nome, preco_produto = :preco, estoque = :quant, data_publi = :dataPubli WHERE id_produto = :id");
                         $stmt->execute(array(
                             ':nome'	=>$_POST['nomeProduto'],
                             ':preco'	=>$_POST['precoProduto'],

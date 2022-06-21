@@ -2,7 +2,8 @@
 <html lang="en">
 <?php
     include_once("./estrutura/head.php");
-    include_once("./classes/connection.php")
+    include_once("./classes/connection.php");
+    session_start();
 ?>
 <body>
 <?php
@@ -15,7 +16,7 @@
         <div class="rowHome">
             <div class="produtosHome">
                 <?php
-                    $stmt = $conn->prepare("SELECT * FROM produtos LIMIT 3");
+                    $stmt = $conn->prepare("SELECT * FROM produtos LIMIT 6");
                     $stmt->execute();
                     $resultado = $stmt->fetchAll();
                     foreach ($resultado as $row){
@@ -24,7 +25,7 @@
                         <div class="legendaProdutoHome">
                             <h2>'.$row['nome_produto'].'</h2>
                             <p>R$ '.$row['preco_produto'].'</p>
-                            <a><button>Adicionar</button></a>
+                            <a href="./code/addProductShoppingCart.php?id='.$row['id_produto'].'"><button>Adicionar</button></a>
                         </div>
                     </div>';
                     }

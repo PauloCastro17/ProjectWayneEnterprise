@@ -12,8 +12,8 @@
 
         <div class="footerPartTwo">
 
-        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="<?php echo $linkWhatsapp ?>" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="<?php echo $linkInstagram ?>" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </div>
 </footer>
