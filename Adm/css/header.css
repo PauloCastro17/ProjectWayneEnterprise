@@ -38,3 +38,23 @@ header{
 .headerLinks a:hover{
     color: #3E9FF7;
 }
+
+#ultimasCompras{
+    margin-right: 20px;
+}
+
+#ultimasCompras span{
+    background-color: #9E78FE;
+    font-size: 10px;
+    color: #FFF;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: -8px;
+}
+
+.headerLinks #ultimasCompras span:hover{
+    background-color: #3E9FF7;
+}
+

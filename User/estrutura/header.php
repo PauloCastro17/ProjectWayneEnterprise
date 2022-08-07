@@ -26,7 +26,8 @@
                 <li><a href="contateNos.php">Contate-nos</a></li>
                 <?php
                     if(isset($_SESSION['id'])){
-                        echo '<li><a href="shoppingCart.php">Carrinho</a></li>';
+                        echo '<li><a href="shoppingCart.php">Carrinho</a></li>
+                        <li><a href="sair.php">Sair</a></li>';
                     }
                 ?>
             </ul>

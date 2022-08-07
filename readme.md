@@ -119,3 +119,9 @@ https://www.figma.com/file/evQoNXmtxG9HB5oR6x6ErF/Project---Wayne-Enterprise
 <p>
     <img src="./imagesReadme/image19.png">
 </p>
+
+### Page Last Purchases
+
+<p>
+    <img src="./imagesReadme/image20.png">
+</p>

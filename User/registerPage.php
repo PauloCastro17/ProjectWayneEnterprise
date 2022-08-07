@@ -56,7 +56,7 @@
                                 ':adm'	=> 0
                             ));
                             if($stmt){
-                                $_SESSION['msg'] = '<div class="messageRegisterPage"> <h2>Dados Alterados com sucesso!</h2> </div>';
+                                $_SESSION['msg'] = '<div class="messageRegisterPage"> <h2>Dados Enviados com sucesso!</h2> </div>';
                                 header('Location: registerPage.php');
                             }else{
                                 $_SESSION['msg'] = '<div class="messageRegisterPage2"> <h2>Erro no envio de dados!</h2> </div>';

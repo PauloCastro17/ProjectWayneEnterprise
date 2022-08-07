@@ -7,12 +7,14 @@
     if(!isset($_SESSION['id'])){
         header('Location: loginPage.php');
     }
+    $quant = "";
     $stmt = $conn->prepare("SELECT * FROM carrinho, produtos WHERE fk_id_user = :id_user ");
     $stmt->execute(array(
         ':id_user' => $_SESSION['id']
     ));
     foreach ($stmt as $row){
         $quant = $row['quant_produto'];
+        $total = $row['total'];
     }
 ?>
 <body>
@@ -27,13 +29,24 @@
             if($quant >= 1){
         ?>
         <div class="btnCompra">
-            <a href="./api/mercadoPago/pagamento.php"><button>Finalizar Compra</button></a>
+            <!--<a href="./picpay.php"><button>Finalizar Compra<img src="./assets/images/picpay.svg"></button></a>
+            <a href="./api/mercadoPago/pagamento.php"><button>Finalizar Compra<img src="./assets/images/mercadoPago.svg"></button></a>-->
+        </div>
+        <div class="btnTotal">
+            <h2>Total da compra: R$ <?php echo $total;?></h2>
+        </div>
+
+        <?php }else if($quant == ""){ ?>
+        <div class="btnCompraEmpty">
+            <p>Carrinho Vazio!!<a href="./index.php"> Clique aqui para voltar ao início</a></p>
         </div>
         <?php } ?>
         <div class="rowShoppingCart">
         <div class="produtosShoppinCart">
         <?php
-                $stmt = $conn->prepare("SELECT * FROM carrinho, produtos WHERE fk_id_user = :id_user ");
+
+
+                $stmt = $conn->prepare("SELECT * FROM carrinho, produtos WHERE fk_id_user = :id_user AND fk_id_produto = id_produto");
                 $stmt->execute(array(
                     ':id_user' => $_SESSION['id']
                 ));
@@ -54,8 +67,6 @@
                             </div>
                         </div>
                     </div>';
-                    }else{
-                        echo '<h1>teste</h1>';
                     }
                 }
         ?>

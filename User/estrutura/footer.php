@@ -1,3 +1,6 @@
+<script src="https://kit.fontawesome.com/dd8cf62b50.js" crossorigin="anonymous"></script>
+    <script src="./index.js" crossorigin="anonymous"></script>
+
 <footer>
     <div class="footer">
         <div class="footerPartOne">

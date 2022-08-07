@@ -23,4 +23,5 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/adcProducts.css">
     <link rel="stylesheet" href="./css/editPageAdm.css">
+    <link rel="stylesheet" href="./css/ultimasCompras.css">
 </head>

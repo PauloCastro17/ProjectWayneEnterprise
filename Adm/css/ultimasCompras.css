@@ -1,0 +1,35 @@
+.containerUltimasCompras h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Maven Pro', sans-serif;
+    color: #3E9FF7;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    font-size: 32px;
+}
+
+.rowUltimasCompras{
+    margin-bottom: 261px;
+}
+
+.tableUltimasCompras table{
+    font-family: 'Maven Pro', sans-serif;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableUltimasCompras th{
+    color: #9E78FE;
+
+}
+
+.tableUltimasCompras td,th{
+    border: 1px solid #dddddd;
+    padding: 8px;
+    width: 300px;
+}

@@ -14,14 +14,21 @@
         <h1>Todos os Produtos</h1>
         <div class="rowProducts">
             <div class="produtosProducts">
-                <div class="produtoProducts">
-                    <img src="./assets/images/imageCamisa.png">
-                    <div class="legendaProdutoProducts">
-                        <h2>Camisa 1</h2>
-                        <p>R$ 60.00</p>
-                        <a><button>Adicionar</button></a>
-                    </div>
-                </div>
+            <?php
+                    $stmt = $conn->prepare("SELECT * FROM produtos");
+                    $stmt->execute();
+                    $resultado = $stmt->fetchAll();
+                    foreach ($resultado as $row){
+                        echo '<div class="produtoProducts">
+                        <img src="'.$row['imagem_produto'].'">
+                        <div class="legendaProdutoProducts">
+                            <h2>'.$row['nome_produto'].'</h2>
+                            <p>R$ '.$row['preco_produto'].'</p>
+                            <a href="./code/addProductShoppingCart.php?id='.$row['id_produto'].'"><button>Adicionar</button></a>
+                        </div>
+                    </div>';
+                    }
+                ?>
 
 
             </div>
