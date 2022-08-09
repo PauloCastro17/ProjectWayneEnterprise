@@ -58,7 +58,7 @@
                         ));
 
                         if($stmt -> rowCount()){
-                            $TokenPicPay = '';
+                            $TokenPicPay = 'e78c10be-8367-40c7-aaa4-60c9b70f655c';
                             $stmt = $conn->prepare('SELECT * FROM pagamento, usuarios WHERE `id_user` = '.$_SESSION['id'].' AND `user_id` = '.$_SESSION['id'].'');
                             $stmt->execute();
                             foreach($stmt as $row){}

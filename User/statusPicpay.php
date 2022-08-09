@@ -2,7 +2,7 @@
             include_once("./classes/connection.php");
             $reference_id = $_GET['id'];
             if(!empty($reference_id)){
-                $TokenPicPay = '';
+                $TokenPicPay = 'e78c10be-8367-40c7-aaa4-60c9b70f655c';
                 $ch = curl_init();
 
                 //URL de local de pagamento
