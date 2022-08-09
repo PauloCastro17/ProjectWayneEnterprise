@@ -67,11 +67,11 @@ https://www.figma.com/file/evQoNXmtxG9HB5oR6x6ErF/Project---Wayne-Enterprise
 ### Page Shopping Cart
 
 <p>
-    <img src="./imagesReadme/image10.png">
+    <img src="./imagesReadme/image23.png">
 </p>
 
 <p>
-    <img src="./imagesReadme/image11.png">
+    <img src="./imagesReadme/image24.png">
 </p>
 
 ### Page Fill Data
