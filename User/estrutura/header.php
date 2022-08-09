@@ -18,7 +18,7 @@
     <header>
         <div class="header">
             <h1>WayneEnterprise</h1>
-
+            
             <ul class="headerLinks">
                 <li><a href="./index.php">Home</a></li>
                 <li><a href="./produtos.php">Produtos</a></li>
@@ -29,7 +29,7 @@
                         echo '<li><a href="shoppingCart.php">Carrinho</a></li>
                         <li><a href="sair.php">Sair</a></li>';
                     }
-                ?>
+                                    ?>
             </ul>
         </div>
     </header>

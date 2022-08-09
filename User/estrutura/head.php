@@ -17,5 +17,6 @@
     <link rel="stylesheet" href="./css/loginPage.css">
     <link rel="stylesheet" href="./css/produtos.css">
     <link rel="stylesheet" href="./css/shoppingCart.css">
+    <link rel="stylesheet" href="./css/pageQrCode.css">
 </head>
 

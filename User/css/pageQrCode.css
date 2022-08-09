@@ -1,0 +1,45 @@
+.mostraQrCode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mostraQrCode img{
+    margin-top: 30px;
+    width: 250px;
+}
+
+.qrCodeLegenda{
+    margin-top: 15px;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.qrCodeLegenda span{
+    color: #9E78FE;
+}
+
+.divBtns{
+    margin-top: 15px;
+}
+
+.divBtns button:hover{
+    cursor: pointer;
+    background-color: #1C1F26;
+}
+
+.btnAtualizar, .btnCancelar{
+    padding: 8px;
+    border: 0;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.btnAtualizar{
+    background-color: #FFED0D;
+    width: 200px;
+}
+
+.btnCancelar{
+    background-color: #ff00009c;
+}

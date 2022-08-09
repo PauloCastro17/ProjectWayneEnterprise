@@ -13,12 +13,13 @@
             $precoProduto = $row['preco_produto'];
         }
 
-        $stmt = $conn->prepare("SELECT * FROM carrinho WHERE fk_id_produto = :id ");
+        $stmt = $conn->prepare("SELECT * FROM carrinho WHERE fk_id_produto = :id AND fk_id_user = :id_user");
         $stmt->execute(array(
-            ':id' => $_GET['id']
+            ':id' => $_GET['id'],
+            ':id_user' => $_SESSION['id']
         ));
         foreach ($stmt as $row) {
-            $idProduto = $row['id_produto'];
+            $idProduto = $row['fk_id_produto'];
         }
 
         if($idProduto == $_GET['id']){

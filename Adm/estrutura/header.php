@@ -8,7 +8,7 @@
                     $idEmpresa = $row['id_site'];
                 }
 
-                $stmt2 = $conn->prepare("SELECT count(id_carrinho) FROM carrinho");
+                $stmt2 = $conn->prepare("SELECT count(id_pagamento) FROM pagamento");
                 $stmt2->execute();
 
                 foreach ($stmt2 as $row){
@@ -28,6 +28,18 @@
 <?php
     if(!isset($_SESSION['id'])){
         header('Location: index.php');
+    }
+
+    if (empty($_SESSION)) session_start();
+
+    if (empty($_SESSION['lastAccess'])) $_SESSION['lastAccess'] = time();
+    else {
+        $_SESSION['lastAccess'] -= time();
+    }
+
+    if ($_SESSION['lastAccess'] > time()+5) {
+        session_destroy();
+        echo('session timeout');
     }
 
 ?>

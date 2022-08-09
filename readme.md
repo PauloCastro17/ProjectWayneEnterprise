@@ -74,6 +74,19 @@ https://www.figma.com/file/evQoNXmtxG9HB5oR6x6ErF/Project---Wayne-Enterprise
     <img src="./imagesReadme/image11.png">
 </p>
 
+### Page Fill Data
+
+<p>
+    <img src="./imagesReadme/image21.png">
+</p>
+
+### Payment Page
+
+<p>
+    <img src="./imagesReadme/image22.png">
+</p>
+
+
 # Adm
 
 ### Page Index

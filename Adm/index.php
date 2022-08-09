@@ -50,6 +50,7 @@
                 $_SESSION['nome'] = $item['nome_user'];
                 $_SESSION['email'] = $item['email_user'];
                 $_SESSION['adm'] = $item['adm'];
+                $_SESSION['lastAccess'] = date('Y-m-d H:i:s');
             }
             if($logado){
                 header("Location: home.php");
