@@ -107,3 +107,45 @@
 .input2EditPageAdm input::placeholder {
     color: #FFF;
 }
+
+@media(max-width: 890px){
+    .inputEditPageAdm input{
+        width: 800px;
+    }
+
+    .input2EditPageAdm input{
+        width: 388px;
+    }
+
+    .inputEditPageAdm textarea{
+        width: 800px;
+    }
+}
+
+@media(max-width: 845px){
+    .inputEditPageAdm input{
+        width: 600px;
+    }
+
+    .input2EditPageAdm input{
+        width: 288px;
+    }
+
+    .inputEditPageAdm textarea{
+        width: 600px;
+    }
+}
+
+@media(max-width: 670px){
+    .inputEditPageAdm input{
+        width: 520px;
+    }
+
+    .input2EditPageAdm input{
+        width: 248px;
+    }
+
+    .inputEditPageAdm textarea{
+        width: 520px;
+    }
+}

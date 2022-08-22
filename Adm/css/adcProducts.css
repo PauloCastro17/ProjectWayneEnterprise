@@ -102,3 +102,33 @@
     color: #FFF;
     background-color: #CABF13;
 }
+
+@media(max-width: 890px){
+    .inputAdcPage2 input{
+        width: 97.5%;
+    }
+
+    .inputAdcPage input{
+        width: 350px;
+    }
+}
+
+@media(max-width: 768px){
+    .inputAdcPage2 input{
+        width: 97.5%;
+    }
+
+    .inputAdcPage input{
+        width: 300px;
+    }
+}
+
+@media(max-width: 670px){
+    .inputAdcPage2 input{
+        width: 97.5%;
+    }
+
+    .inputAdcPage input{
+        width: 250px;
+    }
+}

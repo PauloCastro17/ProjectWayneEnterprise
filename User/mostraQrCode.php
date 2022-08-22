@@ -7,7 +7,25 @@
 ?>
 <body>
 <?php
-    include_once("./estrutura/header.php")
+    include_once("./estrutura/header.php");
+
+    $pagamento = 0;
+    $stmt = $conn->prepare("SELECT * FROM pagamento WHERE user_id = :id_user ");
+    $stmt->execute(array(
+        ':id_user' => $_SESSION['id']
+    ));
+    foreach ($stmt as $row){
+        $pagamento = 1;
+        $dataVencimento = $row['data_vencimento'];
+        $referenceId = $row['referenceId'];
+    }
+    if($pagamento != 1){
+        header("Location: shoppingCart.php");
+    }
+
+    if(date("Y-m-d") == $dataVencimento ){
+        header('Location: ./cancelaPicpay.php?id='.$referenceId.'');
+    }
 ?>
 
 <section id="home">

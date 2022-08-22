@@ -31,7 +31,6 @@
 
 .inputRegisterPage, .inputRegisterPage2{
     margin-bottom: 25px;
-    
 }
 
 .inputRegisterPage input::placeholder{
@@ -98,5 +97,36 @@
     to{
         transform: translateY(0px)
 
+    }
+}
+
+
+@media(max-width: 768px){
+    .inputRegisterPage input{
+        width: 600px;
+    }
+
+    .inputRegisterPage2 input{
+        width: 250px;
+    }
+}
+
+@media(max-width: 620px){
+    .inputRegisterPage input{
+        width: 550px;
+    }
+
+    .inputRegisterPage2 input{
+        width: 250px;
+    }
+}
+
+@media(max-width: 550px){
+    .inputRegisterPage input{
+        width: 350px;
+    }
+
+    .inputRegisterPage2 input{
+        width: 150px;
     }
 }

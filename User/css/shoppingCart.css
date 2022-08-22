@@ -184,3 +184,22 @@
     flex-direction: row;
     margin-bottom: 15px;
 }
+
+@media(max-width: 1000px){
+    .produtosShoppinCart{
+        display: grid;
+        grid-template-columns: 350px 350px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 768px){
+    .produtosShoppinCart{
+        display: grid;
+        grid-template-columns: 350px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+

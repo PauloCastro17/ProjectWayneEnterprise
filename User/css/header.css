@@ -38,3 +38,12 @@ header{
 .headerLinks a:hover{
     color: #3E9FF7;
 }
+
+@media(max-width:768px){
+    .header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+}

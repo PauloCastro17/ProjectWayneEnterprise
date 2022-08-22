@@ -95,3 +95,33 @@
     cursor: pointer;
 }
 
+
+@media(max-width: 768px){
+    .inputRegisterPage input{
+        width: 600px;
+    }
+
+    .inputRegisterPage2 input{
+        width: 250px;
+    }
+}
+
+@media(max-width: 620px){
+    .inputRegisterPage input{
+        width: 550px;
+    }
+
+    .inputRegisterPage2 input{
+        width: 250px;
+    }
+}
+
+@media(max-width: 550px){
+    .inputRegisterPage input{
+        width: 450px;
+    }
+
+    .inputRegisterPage2 input{
+        width: 200px;
+    }
+}

@@ -84,11 +84,18 @@ if($cod_status == "chargeback"){
                     //fechar
                     curl_close($ch);
 
-                    $stmt = $conn->prepare("DELETE FROM `pagamento` WHERE id_pagamento = :id");
+                    $stmt = $conn->prepare("UPDATE `backup` SET `status` = :status, cod_status = :cod_status WHERE id_backup = :id");
                     $stmt->execute(array(
+                        ':status' => $DadosResultado->status,
+                        ':cod_status' => $cod_status,
                         ':id' => $reference_id
                     ));
-                    header("Location: shoppingCart.php");
+
+                        $stmt = $conn->prepare("DELETE FROM `pagamento` WHERE id_pagamento = :id");
+                        $stmt->execute(array(
+                            ':id' => $reference_id
+                        ));
+                        header("Location: statusPicPay.php?id=".$reference_id);
                 
             }else{
                 echo '<script>alert("ERRO!")</script>';

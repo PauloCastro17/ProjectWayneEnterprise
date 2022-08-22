@@ -48,12 +48,24 @@
     </section>
     <?php
                     if($_POST){
+                        $idPagamento = rand(1000,9999);
+
+
                         $stmt = $conn->prepare("INSERT INTO pagamento(id_pagamento, user_id, data, data_vencimento, valor) VALUES(:id, :id_user, :data, :data_vencimento, :valor)");
                         $stmt->execute(array(
-                            ':id' => rand(1000, 9999),
+                            ':id' => $idPagamento,
                             ':id_user' => $_SESSION['id'],
                             ':data' => date("Y-m-d"),
-                            ':data_vencimento' => date("Y-m-d", strtotime('+3days')),
+                            ':data_vencimento' => date("Y-m-d", strtotime('+1days')),
+                            ':valor' => $total
+                        ));
+
+                        $stmt = $conn->prepare("INSERT INTO backup(id_backup, user_id, data, data_vencimento, valor) VALUES(:id, :id_user, :data, :data_vencimento, :valor)");
+                        $stmt->execute(array(
+                            ':id' => $idPagamento,
+                            ':id_user' => $_SESSION['id'],
+                            ':data' => date("Y-m-d"),
+                            ':data_vencimento' => date("Y-m-d", strtotime('+1days')),
                             ':valor' => $total
                         ));
 
@@ -110,6 +122,14 @@
             echo '<script>alert("Erro!");</script>';
         }else{
             $stmt = $conn->prepare("UPDATE pagamento SET referenceId = :referenceid, qrcode = :qrcode, paymentUrl = :payment WHERE `user_id` = :id");
+            $stmt->execute(array(
+                ':referenceid' => $DadosResultado->referenceId,
+                ':qrcode' => $DadosResultado->qrcode->base64,
+                ':payment' => $DadosResultado->paymentUrl,
+                ':id' => $_SESSION['id']
+            ));
+
+            $stmt = $conn->prepare("UPDATE backup SET referenceId = :referenceid, qrcode = :qrcode, paymentUrl = :payment WHERE `user_id` = :id");
             $stmt->execute(array(
                 ':referenceid' => $DadosResultado->referenceId,
                 ':qrcode' => $DadosResultado->qrcode->base64,

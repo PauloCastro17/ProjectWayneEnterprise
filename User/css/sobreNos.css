@@ -50,3 +50,21 @@
     margin-left: 5px;
     color: #9E78FE;
 }
+
+@media(max-width: 850px){
+    .rowAboutUs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .legendaAboutUs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .h1legendaAboutUs{
+        margin-top: 35px;
+    }
+}

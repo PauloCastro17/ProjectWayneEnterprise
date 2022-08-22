@@ -39,7 +39,7 @@
                         <th>Data Vencimento</th>
                     </tr>
                     <?php 
-                        $stmt = $conn->prepare("SELECT * FROM usuarios, produtos, carrinho, pagamento WHERE fk_id_user = id_user AND fk_id_produto = id_produto AND user_id = fk_id_user");
+                        $stmt = $conn->prepare("SELECT * FROM usuarios, produtos, carrinho, backup WHERE fk_id_user = id_user AND fk_id_produto = id_produto AND user_id = fk_id_user");
                         $stmt ->execute();
                         foreach ($stmt as $row){
                             $americano = new DateTime($row['data_vencimento']);

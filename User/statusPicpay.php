@@ -60,6 +60,13 @@
                     ':cod_status' => $cod_status,
                     ':id' => $reference_id
                 ));
+
+                $stmt = $conn->prepare("UPDATE `backup` SET `status` = :status, cod_status = :cod_status WHERE id_backup = :id");
+                $stmt->execute(array(
+                    ':status' => $DadosResultado->status,
+                    ':cod_status' => $cod_status,
+                    ':id' => $reference_id
+                ));
                 header("Location: mostraQrCode.php");
 
                 
