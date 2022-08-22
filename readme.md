@@ -4,7 +4,7 @@
 
 O projetos está sendo desenvolvido em PHP como meio de estudo, quando eu for fazendo as páginas vou postando aqui.
 
-### Tecnologias Utilizadas
+### Atualizações do projeto
  * Parte do usuário concluída
  * Parte do adm concluída
  * Api PicPay Adicionada
